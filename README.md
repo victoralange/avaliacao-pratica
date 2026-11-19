@@ -6,6 +6,16 @@ O **Pet World** é uma página web desenvolvida como parte da avaliação práti
 
 Desenvolver uma página temática utilizando HTML, CSS e JavaScript, aplicando conceitos de estruturação, estilização, responsividade, manipulação de formulários, validação de dados e tratamento de erros.
 
+## Imagens
+### 1. Print Celular
+<img src="print-celular.png">
+### 2. Página Inteira
+<img src="página-inteira.png">
+### 3. Validação - Formulário com erro
+<img src="validação-erro.png">
+### 4. Validação - Formulário correto
+<img src="formulario-sucesso.png">
+
 ## Funcionalidades
 
 - **Página inicial:** apresentação da Pet World.
