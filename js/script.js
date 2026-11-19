@@ -183,41 +183,18 @@ resultado.innerHTML = `
 
             </div>
 
-            <div style="
-                margin-top: 15px;
-                padding: 14px;
-                background: white;
-                border-radius: 12px;
-                border: 1px solid #eee5d8;
-            ">
+            <div style="margin-top: 15px;padding: 14px;background: white;border-radius: 12px;border: 1px solid #eee5d8;">
                 <b style="color: #6925a5; font-size: 14px;">
                     <i class="fa-solid fa-heart"></i>
                     Sobre ${animal}
                 </b>
 
-                <p style="
-                    color: #666;
-                    font-size: 13px;
-                    line-height: 1.6;
-                    margin-bottom: 0;
-                ">
+                <p style="color: #666;font-size: 13px;line-height: 1.6;margin-bottom: 0;">
                     Com base nos dados informados, ${dados.nome}
                     possui uma estimativa de consumo de
                     ${quantidade} gramas de ração por dia.
                 </p>
             </div>
-
-            <p style="
-                color: #999;
-                font-size: 11px;
-                line-height: 1.5;
-                text-align: center;
-                margin: 18px 0 0;
-            ">
-                <i class="fa-solid fa-circle-info"></i>
-                Estimativa educativa baseada em uma ração de referência
-                de 3.800 kcal/kg. Não substitui a orientação veterinária.
-            </p>
 
         </div>
     </div>
