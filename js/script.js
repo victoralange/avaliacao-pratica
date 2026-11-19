@@ -89,22 +89,10 @@ let quantidade = calcular(dados);
 let animal = dados.especie == "gato" ? "gatinho" : "cachorrinho";
 
 resultado.innerHTML = `
-    <div style="
-        margin-top: 25px;
-        border-radius: 18px;
-        overflow: hidden;
-        background: #fffaf0;
-        border: 1px solid #f0dfbd;
-        text-align: left;
-        animation: aparecer 0.4s ease;
-    ">
+    <div style="margin-top: 25px;border-radius: 18px;overflow: hidden;background: #fffaf0;border: 1px solid #f0dfbd;text-align: left;animation: aparecer 0.4s ease;">
 
         <div style="
-            background: linear-gradient(135deg, #6925a5, #9148c5);
-            padding: 22px;
-            color: white;
-            text-align: center;
-        ">
+            background: linear-gradient(135deg, #6925a5, #9148c5);padding: 22px;color: white;text-align: center;">
             <i class="fa-solid fa-paw" style="font-size: 28px; margin-bottom: 10px;"></i>
             <h3 style="margin: 0; font-size: 21px;">
                 Resultado para ${dados.nome}
@@ -121,40 +109,19 @@ resultado.innerHTML = `
                     QUANTIDADE DIÁRIA ESTIMADA
                 </small>
 
-                <div style="
-                    color: #6925a5;
-                    font-size: 42px;
-                    font-weight: 800;
-                    margin: 5px 0;
-                ">
+                <div style="color: #6925a5;font-size: 42px;font-weight: 800;margin: 5px 0;">
                     ${quantidade} g
                 </div>
 
-                <span style="
-                    background: #eee3f8;
-                    color: #6925a5;
-                    padding: 6px 13px;
-                    border-radius: 20px;
-                    font-size: 12px;
-                    font-weight: 600;
-                ">
+                <span style="background: #eee3f8;color: #6925a5;padding: 6px 13px;border-radius: 20px;font-size: 12px;font-weight: 600;">
                     <i class="fa-solid fa-check-circle"></i>
                     Cálculo concluído
                 </span>
             </div>
 
-            <div style="
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 12px;
-            ">
+            <div style="display: grid;grid-template-columns: 1fr 1fr;gap: 12px;">
 
-                <div style="
-                    background: white;
-                    border: 1px solid #eee5d8;
-                    border-radius: 12px;
-                    padding: 14px;
-                ">
+                <div style="background: white;border: 1px solid #eee5d8;border-radius: 12px;padding: 14px;">
                     <i class="fa-solid fa-calendar-days"
                        style="color: #d18a0e; font-size: 20px;"></i>
                     <p style="color: #888; font-size: 12px; margin: 8px 0 3px;">
@@ -165,17 +132,10 @@ resultado.innerHTML = `
                     </b>
                 </div>
 
-                <div style="
-                    background: white;
-                    border: 1px solid #eee5d8;
-                    border-radius: 12px;
-                    padding: 14px;
-                ">
+                <div style="background: white;border: 1px solid #eee5d8;border-radius: 12px;padding: 14px;">
                     <i class="fa-solid fa-weight-scale"
                        style="color: #d18a0e; font-size: 20px;"></i>
-                    <p style="color: #888; font-size: 12px; margin: 8px 0 3px;">
-                        Peso informado
-                    </p>
+                    <p style="color: #888; font-size: 12px; margin: 8px 0 3px;">Peso informado</p>
                     <b style="font-size: 19px; color: #333;">
                         ${dados.peso} kg
                     </b>
@@ -184,16 +144,9 @@ resultado.innerHTML = `
             </div>
 
             <div style="margin-top: 15px;padding: 14px;background: white;border-radius: 12px;border: 1px solid #eee5d8;">
-                <b style="color: #6925a5; font-size: 14px;">
-                    <i class="fa-solid fa-heart"></i>
-                    Sobre ${animal}
-                </b>
-
-                <p style="color: #666;font-size: 13px;line-height: 1.6;margin-bottom: 0;">
-                    Com base nos dados informados, ${dados.nome}
-                    possui uma estimativa de consumo de
-                    ${quantidade} gramas de ração por dia.
-                </p>
+                <b style="color: #6925a5; font-size: 14px;"><i class="fa-solid fa-heart"></i>Sobre ${animal}</b>
+                <p style="color: #666;font-size: 13px;line-height: 1.6;margin-bottom: 0;">Com base nos dados informados, ${dados.nome}
+                    possui uma estimativa de consumo de ${quantidade} gramas de ração por dia.</p>
             </div>
 
         </div>
