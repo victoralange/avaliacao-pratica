@@ -63,6 +63,10 @@ ul li a {
     border-radius: 15px;
 }
 
+.card > div {
+    width: 100%;
+}
+
 .card > img {
     height: 125px;
     transform: rotate(15deg)
@@ -77,13 +81,41 @@ ul li a:hover {
     background-color: #fbede1;
 }
 
+#inicio::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #fac261;
+    border-radius: 0 100% 0 0;
+    margin-top: -150px;
+}
+
+#inicio::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    right: 0;
+    position: absolute;
+    background-color: #fac261;
+    border-radius: 0  0  0 100%;
+    float: right;
+}
+
 #apresentacao, #sobre-nos, #calculadora-pet {
-    max-width: 1000px;
+    max-width: 750px;
     margin: 0 auto;
+}
+
+#apresentacao > div {
+    z-index: 999;
 }
 
 #apresentacao {
     display: flex;
+    padding-top: 15px;
     align-items: center;
     color: #371552;
     font-size: 20px;
@@ -93,8 +125,6 @@ ul li a:hover {
     margin-bottom: -75px;
     flex-shrink: 0;
     z-index: 99;
-    margin-right: 45px;
-    margin-top: 15px;
 }
 
 #apresentacao > div {
@@ -118,10 +148,81 @@ ul li a:hover {
 
 #sobre-nos {
     padding-top: 30px;
+    margin-bottom: 30px;
 }
 
 #sobre-nos > h3 {
     font-size: 22.5px;
+}
+
+form {
+    width: 100%;
+}
+
+input[type=text], input[type=number], select {
+    width: calc(100% - 20px);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 3px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    margin-top: 10px;
+}
+
+input[type=checkbox] {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 3px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    padding: 10px;
+    accent-color: #d18a0e;
+    margin-bottom: 15px;
+    outline: none;
+    margin-top: 10px;
+}
+
+#calculadora-pet > .card {
+    background-color: #fbede1;
+    color: #d18a0e;
+}
+
+#calculadora-pet > .card > div > form > button {
+    background-color: #d18a0e;
+    margin-top: 15px;
+}
+
+#calculadora-pet > .card > div > form > button:hover {
+    background-color: #eea425;
+    cursor: pointer;
+}
+
+#calculadora-pet > .card > div > form > button:active {
+    background-color: #d18a0e;
+    cursor: pointer;
+}
+
+button {
+    transition: 0.1s;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #3b1858;
+    border: none;
+    color: white;
+    font-family: 'DynaPuff';
+    padding: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #945ac4;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #3b1858;
+    cursor: pointer;
 }
 
 h3 {
@@ -131,5 +232,24 @@ h3 {
 @media (max-width: 620px){  /* remove a navegacao quando nao há espaço (celular) */
     ul {
         display: none;
+    }
+
+    #apresentacao > img{
+        width: 500px;
+    }
+}
+
+@media (max-width: 900px){  /* diminui a largura (Width) da imagem no celular */
+    #apresentacao > img{
+        width: 400px;
+    }
+}
+
+@media (max-width: 800px){  /* diminui a largura (Width) da imagem no celular */
+    #apresentacao > img{
+        width: 300px;
+    }
+    #apresentacao, #sobre-nos {
+        max-width: 90% !important;
     }
 }

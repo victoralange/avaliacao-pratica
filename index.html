@@ -13,9 +13,9 @@
     <header>
         <a id="titulo"><span>Pet</span> World</a>
         <ul>
+            <li><a href="#calculadora-pet">Calculadora Pet</a></li>
+            <li><a href="#sobre-nos">Sobre nós</a></li>
             <li><a href="#inicio">Início</a></li>
-            <li><a>Sobre nós</a></li>
-            <li><a>Calculadora Pet</a></li>
         </ul>
     </header>
 
@@ -44,5 +44,38 @@
         </div>
     </section>
     
+    <section id="calculadora-pet">
+        <div class="card">
+            <div>
+                <h3><i class="fa-solid fa-paw"></i> Calculadora Pet</h3>
+                <small>Descubra quantas gramas de ração seu pet deve comer por dia.</small><br><br>
+                <form>
+                    <label for="especie">Seu pet é...?</label>
+                    <select id="especie">
+                        <option value="gato">Gato</option>
+                        <option value="cachorro">Cachorro</option>
+                    </select>
+
+                    <label for="nome">Qual o nome do seu pet?</label>
+                    <input id="nome" placeholder="Nome do pet" type="text">
+
+                    <label for="peso">Qual o peso estimado do seu pet (kg)?</label>
+                    <input id="peso" min=0 placeholder="Peso do pet" type="number">
+
+                    <label for="idade">Qual a idade do seu pet em meses?</label>
+                    <input id="idade" placeholder="Idade do pet (em MESES)" min=0 max=5000 type="number">
+
+                    Seu pet é castrado?<br>
+                    <input id="true" name="castrado" value=true type="radio"> <label for="true">Sim</label><br>
+                    <input id="false" name="castrado" value=false type="radio"> <label for="false">Não</label>
+                    
+                    <button id="calcular">Calcular</button>
+                    <div id="resultado"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <br><br>
 </body>
 </html>
