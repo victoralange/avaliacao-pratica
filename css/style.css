@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'DynaPuff';
+}
+
+header {
+    background-color: #3b1858;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    padding: 5px 25px;
+    font-size: 20px;
+}
+
+#titulo {
+    flex: 1;
+    font-family: 'DynaPuff';
+    font-size: 22.5px;
+    padding: 14px 16px
+}
+
+#titulo > span {
+    color: #f0c267;
+}
+
+ul {
+    flex-shrink: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li {
+    float: right;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    background-color: #49206b;
+    border-radius: 15px;
+}
